@@ -1,11 +1,45 @@
 # dappII
 Capstone Project
-Wanja Mascarenhas - 101280022
 
 ## Self Sovereign Identity - Hyperledger Indy
 
 Self-Sovereign Identity is a lifetime, portable digital identity for any person that does not depend on any centralized authority and can never be taken away. Ability for people to obtain, hold, manage and present their own digitally verifiable credentials (any purpose anywhere, privacy and security).
 
+## Process
+
+The process will configure the Birth Certificat at Service Ontario
+
+Storytelling
+
+1. Steward (onboarding process) creates a DID (Decentralized Identifiers) with Trust Anchor roles
+
+      Service Ontario - Birth Certificate Issuer
+         Create a schema (issue to ledger)
+
+      School - Certificate School  
+         Create a schema based on Birth Certificate (issue to ledger)
+
+      University - Diploma
+         Create a schema based on Birth Certificate (issue to ledger) 
+
+2. School create a connection with student and issue the credential of conclusion
+
+3. Student receive the credential and stores in the wallet
+
+4. University request proof of school 
+
+5. Student send a proof of credential received from school
+
+Ledger - All Decentralized Identifier (DID), verinym and pairwise-unique DID 
+https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae
+14/1701/08/2020
+Exploring Hyperledger Indy through indy-dev Example | by KC Tam | Medium
+Schemas, which defines the structure of items referred by both credential definitions
+and credentials
+Credential Definition, which is built on top of a schema, plus the issuer’s information
+for proof creation
+All these items are publicly accessible, and therefore is NOT secret at all to any
+organizations or individuals.
 ## How to run
 
 For run this project we will need two terminals:
@@ -99,3 +133,12 @@ Frontend
    - [ReactJS](https://reactjs.org/) - frontend library
    - [React router dom](https://www.npmjs.com/package/react-router-dom) - routing and navigation for react apps
    - [React-cookie](https://www.npmjs.com/package/react-cookie) - cookie interaction for React applications
+
+Source
+   - [Hyperledger Indy](https://hyperledger-indy.readthedocs.io/en/latest/) - Documentation
+   - [Medium](https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae)
+   - [BC-VON](https://vonx.io/) - British Columbia use case
+  	- [VON-Network](https://github.com/bcgov/von-network) - Hyperledger Indy network
+   - [CULedger](https://www.culedger.com/) - Hyperledger Indy for Credit Unions
+   - [Cloudagent](https://github.com/hyperledger/aries-cloudagent-python) - Hyperledger Aries for communication between SSI agents
+
