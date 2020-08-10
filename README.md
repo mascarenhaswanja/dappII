@@ -7,7 +7,7 @@ Self-Sovereign Identity is a lifetime, portable digital identity for any person 
 
 ## Process
 
-The process will configure the Birth Certificat at Service Ontario
+The process will configure the Birth Certificate at Service Ontario
 
 Storytelling
 
@@ -16,11 +16,11 @@ Storytelling
       Service Ontario - Birth Certificate Issuer
          Create a schema (issue to ledger)
 
-      School - Certificate School  
+      School - Credential School  
          Create a schema based on Birth Certificate (issue to ledger)
 
-      University - Diploma
-         Create a schema based on Birth Certificate (issue to ledger) 
+      University - Credential Diploma   
+         Create a schema based on School credential (issue to ledger) 
 
 2. School create a connection with student and issue the credential of conclusion
 
@@ -30,16 +30,16 @@ Storytelling
 
 5. Student send a proof of credential received from school
 
-Ledger - All Decentralized Identifier (DID), verinym and pairwise-unique DID 
-https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae
-14/1701/08/2020
-Exploring Hyperledger Indy through indy-dev Example | by KC Tam | Medium
-Schemas, which defines the structure of items referred by both credential definitions
-and credentials
-Credential Definition, which is built on top of a schema, plus the issuer’s information
-for proof creation
-All these items are publicly accessible, and therefore is NOT secret at all to any
-organizations or individuals.
+Ledger:
+
+Available on the Ledger (publicly accessible):
+   - All Decentralized Identifier (DID), verinym and pairwise-unique DID 
+   - Schemas - defines the structure of items referred by both credential definitions and credentials
+   - Credential Definition - built on top of a schema, plus the issuer’s information for proof creation
+
+Personally Identifiable Information (PII) (Not in the Ledger):
+   - Not readily accessible by anyone. PII is used to communicate via peer connections. And these connection is secured, through authenticated encryption, and information shared between is only known to the two parties.  
+
 ## How to run
 
 For run this project we will need two terminals:
@@ -135,10 +135,9 @@ Frontend
    - [React-cookie](https://www.npmjs.com/package/react-cookie) - cookie interaction for React applications
 
 Source
-   - [Hyperledger Indy](https://hyperledger-indy.readthedocs.io/en/latest/) - Documentation
-   - [Medium](https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae)
+   - [Hyperledger Indy](https://hyperledger-indy.readthedocs.io/en/latest/) - Documentation Hyperledger Indy
+   - [Medium](https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae) - Exploring Hyperledger Indy through indy-dev
    - [BC-VON](https://vonx.io/) - British Columbia use case
-  	- [VON-Network](https://github.com/bcgov/von-network) - Hyperledger Indy network
+   - [VON-Network](https://github.com/bcgov/von-network) - Hyperledger Indy network
    - [CULedger](https://www.culedger.com/) - Hyperledger Indy for Credit Unions
    - [Cloudagent](https://github.com/hyperledger/aries-cloudagent-python) - Hyperledger Aries for communication between SSI agents
-
