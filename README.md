@@ -1,9 +1,25 @@
-# dappII
-Capstone Project
+# Identity Freedom
 
-## Self Sovereign Identity - Hyperledger Indy
+## Self Sovereign Identity - Hyperledger Indy - Overview
 
 Self-Sovereign Identity is a lifetime, portable digital identity for any person that does not depend on any centralized authority and can never be taken away. Ability for people to obtain, hold, manage and present their own digitally verifiable credentials (any purpose anywhere, privacy and security).
+
+Hyperledger Indy provides tools, libraries, and reusable components for providing digital identities rooted on blockchain. 
+- Self-sovereignity - Indy stores identity on a ledger with distributed ownership.
+- Privacy - owner can operate without creating any correlation risk or breadcrumbs.
+- Verifiable claims - Identity claims can resemble familiar credentials such as birth certificates, driver’s licenses, passports, and so on. These credentials can be combined and transformed. Also, enable selective disclosure of the context.
+
+Indy uses a modified version of Redundant Byzantine Fault Tolerance (RBFT) consensus called Plenum.
+
+Indy is a public and permissioned blockchain.
+
+Available on the Ledger (publicly accessible)
+   - All Decentralized Identifier (DID), verinym and pairwise-unique DID 
+   - Schemas - defines the structure of items referred by both credential definitions and credentials
+   - Credential Definition - built on top of a schema, plus the issuer’s information for proof creation
+
+Personally Identifiable Information (PII) (Not in the Ledger)
+   - Not readily accessible by anyone. PII is used to communicate via peer connections. And these connection is secured, through authenticated encryption, and information shared between is only known to the two parties. 
 
 ## Process
 
@@ -30,15 +46,6 @@ Storytelling
 
 5. Student send a proof of credential received from school
 
-Ledger:
-
-Available on the Ledger (publicly accessible):
-   - All Decentralized Identifier (DID), verinym and pairwise-unique DID 
-   - Schemas - defines the structure of items referred by both credential definitions and credentials
-   - Credential Definition - built on top of a schema, plus the issuer’s information for proof creation
-
-Personally Identifiable Information (PII) (Not in the Ledger):
-   - Not readily accessible by anyone. PII is used to communicate via peer connections. And these connection is secured, through authenticated encryption, and information shared between is only known to the two parties.  
 
 ## How to run
 
@@ -103,6 +110,7 @@ cd frontend
 
 # Install dependencies
 npm install
+
 # Run API application
 npm run start
 ```
@@ -136,6 +144,7 @@ Frontend
 
 Source
    - [Hyperledger Indy](https://hyperledger-indy.readthedocs.io/en/latest/) - Documentation Hyperledger Indy
+   - [Hyperledger Indy White Paper](https://www.hyperledger.org/wp-content/uploads/2018/08/HL_Whitepaper_IntroductiontoHyperledger.pdf)
    - [W3C](https://www.w3.org/TR/did-use-cases/) - Use Cases and Requirements for Decentralized Identifiers
    - [Sovrin](https://sovrin.org/) - Sovrin Network for digital credentials- Zero Knowledge Proofs (ZKPs)
    - [Evernym](https://www.evernym.com/) - platform for verifiable credentials
