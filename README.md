@@ -136,8 +136,11 @@ Frontend
 
 Source
    - [Hyperledger Indy](https://hyperledger-indy.readthedocs.io/en/latest/) - Documentation Hyperledger Indy
-   - [Medium](https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae) - Exploring Hyperledger Indy through indy-dev
+   - [W3C](https://www.w3.org/TR/did-use-cases/) - Use Cases and Requirements for Decentralized Identifiers
+   - [Sovrin](https://sovrin.org/) - Sovrin Network for digital credentials- Zero Knowledge Proofs (ZKPs)
+   - [Evernym](https://www.evernym.com/) - platform for verifiable credentials
    - [BC-VON](https://vonx.io/) - British Columbia use case
    - [VON-Network](https://github.com/bcgov/von-network) - Hyperledger Indy network
    - [CULedger](https://www.culedger.com/) - Hyperledger Indy for Credit Unions
+   - [Medium](https://medium.com/@kctheservant/exploring-hyperledger-indy-through-indy-dev-example-10075d2547ae) - Exploring Hyperledger Indy through indy-dev
    - [Cloudagent](https://github.com/hyperledger/aries-cloudagent-python) - Hyperledger Aries for communication between SSI agents
