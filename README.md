@@ -32,7 +32,7 @@ To run the application we will need to set your own configurations
 
 # -------------  Backend Credentials  ----------------- #
 PORT=5000
-MONGODB_URI_DEV="mongodb+srv://user:password@cluster0-t8c4x.mongodb.net/Certificate?retryWrites=true&w=majority"
+MONGODB_URI_DEV=""
 PRIVATE_KEY=""
 
 # ------------- Developer Credentials ----------------- #
@@ -78,6 +78,7 @@ npm run start
 
 - username: admin
 - password: 12345
+```
 
 ## Resources and technologies 
 
