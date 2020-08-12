@@ -1,4 +1,5 @@
-# Identity Freedom
+# An Identity Freedom
+
 
 ## Self Sovereign Identity - Hyperledger Indy - Overview
 
@@ -46,6 +47,17 @@ Storytelling
 
 5. Student send a proof of credential received from school
 
+## Model
+
+<div align="center" >
+      <img src="./diagrams/model.png" alt="model" width="60%" height="50%"/>
+</div>
+
+## Class Diagram
+
+<div align="center" >
+      <img src="./diagrams/classdiagram.png" alt="classdiagram" width="60%" height="50%"/>
+</div>
 
 ## How to run
 
