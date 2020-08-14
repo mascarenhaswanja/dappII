@@ -28,6 +28,8 @@ The process will configure the Birth Certificate at Service Ontario
 
 Storytelling
 
+The student will receive school certifications and prove that she/he has the right grades to go to University
+
 1. Steward (onboarding process) creates a DID (Decentralized Identifiers) with Trust Anchor roles
 
       Service Ontario - Birth Certificate Issuer
@@ -39,13 +41,22 @@ Storytelling
       University - Credential Diploma   
          Create a schema based on School credential (issue to ledger) 
 
-2. School create a connection with student and issue the credential of conclusion
+2. The student creates a wallet
 
-3. Student receive the credential and stores in the wallet
+3. The student creates a connection with Service Ontario
 
-4. University request proof of school 
+4. Service Ontario issues a Birth Certificate Credential to the student's wallet
 
-5. Student send a proof of credential received from school
+5. The student creates a connection with their high school
+
+6. The student proves who they are from the birth certificate credential
+
+7. The school issues a high school diploma certificate to the student
+
+8. The student creates a connection with the university
+
+9. The student can share their birth certificate and high school graduation certificates with the university
+
 
 ## Model
 
