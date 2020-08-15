@@ -59,7 +59,7 @@ The student will receive school certifications and prove that she/he has the rig
 
 ## Demo Create a Credential
 <p align="center">
-  <img src="https://res.cloudinary.com/dxyux3wnj/video/upload/v1597460328/Demo_Identity_zqcodp.mp4">
+  <img src="https://res.cloudinary.com/dxyux3wnj/video/upload/v1597461396/demo-identity_compressed_ayyycj.mp4">
 </p>
 
 ## Model
