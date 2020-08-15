@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const cors = require('cors');
 const { CredentialsServiceClient, Credentials } = require("@trinsic/service-clients");
-const { connect } = require('../../../../trinsic/verifier-reference-app/routes/api');
 require('dotenv').config();
 
 const client = new CredentialsServiceClient(
@@ -44,6 +43,63 @@ router.get('/checkVerification', cors(), async function (req, res) {
   res.status(200).send({
     verification: verification
   });
+});
+
+router.get('/listalltenant', cors(), async function (req, res) {
+  try {
+    let tenants = await providerClient.listTenants();
+    res.status(200).send(tenants);
+  }
+  catch (err){
+    console.log(res.status);
+
+  }
+});
+
+router.get('/getCredentials/:credentialId', async function (req, res){
+  let credentialId = req.params.credentialId;
+  let credential = await credentialsClient.getCredential(credentialId);
+  res.status(200).send(credential);
+});
+
+router.delete ('/revokeAnIssuedCred/:credentialId', async function (req, res){
+  let credentialId = req.params.credentialId;
+  let credential = await credentialsClient.revokeCredential(credentialId);
+  res.status(200).send(credential);
+});
+
+router.delete ('/deleteCredentials/:credentialId', async function (req, res){
+  let credentialId = req.params.credentialId;
+  let credential = await credentialsClient.deleteCredential(credentialId);
+  res.status(200).send(credential);
+});
+
+router.get ('/getAllVerPol', cors(), async function (req, res){
+  let verifications = await credentialsClient.listVerificationPolicies();
+  res.status(200).send(verifications);
+});
+
+router.post('/createVerPol', async function (req, res) {
+    let verificationPolicy = await credentialsClient.createVerificationPolicy({
+    name: "Verification Name",
+    version: "1.0", // Must follow Semantic Versioning scheme (https://semver.org),
+    attributes: req.body.attributePolicies,
+    predicates: req.body.predicatePolicies,
+    revocationRequirement: req.body.revocationRequirement
+  });
+  res.status(200).send(verificationPolicy);
+});
+
+router.get('/getVerPol/:policyId', cors(), async function (req, res){
+  let policyId = req.params.policyId;
+  let verificationPolicy = await credentialsClient.getVerificationPolicy(policyId);
+  res.status(200).send(verificationPolicy);
+});
+
+router.delete('/deleteVerPol/:policyId', async function (req, res){
+  let policyId = req.params.policyId;
+  let response =  await credentialsClient.deleteVerificationPolicy(policyId);
+  res.status(200).send(response);
 });
 
 module.exports = router;

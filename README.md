@@ -57,9 +57,9 @@ The student will receive school certifications and prove that she/he has the rig
 
 9. The student can share their birth certificate and high school graduation certificates with the university
 
-## Demo Create a Credential
+## Demo Create and Verify Credential (Self Sovereign Identity)
 
-- [Demo Go to: ](https://res.cloudinary.com/dxyux3wnj/video/upload/v1597460328/Demo_Identity_zqcodp.mp4)
+- [Go to Demo - click here](https://res.cloudinary.com/dxyux3wnj/video/upload/v1597460328/Demo_Identity_zqcodp.mp4)
 
 ## Model
 
